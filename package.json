@@ -1,11 +1,8 @@
 {
-  "name": "mean_web_test",
+  "name": "new_imp_git",
   "version": "1.0.0",
-  "description": "Testes Node.JS",
+  "description": "New Imp Git",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "dependencies": {
     "body-parser": "^1.15.0",
     "compression": "^1.6.1",
@@ -25,6 +22,17 @@
     "passport-local": "^1.0.0",
     "path": "^0.12.7"
   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vittmlb/new_imp_git.git"
+  },
   "author": "Vittorio",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vittmlb/new_imp_git/issues"
+  },
+  "homepage": "https://github.com/vittmlb/new_imp_git#readme"
 }
