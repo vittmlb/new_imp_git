@@ -6,7 +6,7 @@
             <br>
             <small data-ng-bind="produto.created | date:'medium'"></small>
             <small>/</small>
-            <small data-ng-bind="produto.preco_usd"></small>
+            <small data-ng-bind="produto.preco_usd | currency: 'U$ '"></small>
             <p data-ng-bind="produto.descricao"></p>
         </li>
     </ul>
