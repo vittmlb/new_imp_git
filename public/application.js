@@ -2,9 +2,9 @@
  * Created by Vittorio on 13/04/2016.
  */
 
-var mainAppModuleName = 'impApp';
+mainAppModuleName = 'impApp';
 
-var mainAppModule = angular.module(mainAppModuleName, ['ngResource', 'ngRoute', 'produtos']);
+mainAppModule = angular.module(mainAppModuleName, ['ngResource', 'ngRoute', 'produtos']);
 
 mainAppModule.config(['$locationProvider', function($locationProvider) {
     $locationProvider.hashPrefix('!');

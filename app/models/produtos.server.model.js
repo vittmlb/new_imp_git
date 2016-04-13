@@ -16,7 +16,7 @@ var ProdutoSchema = new Schema({
     nome: {
         type: String,
         default: '',
-        trim: '',
+        trim: true,
         required: 'O Campo nome é obrigatório'
     },
     modelo: {
@@ -35,7 +35,6 @@ var ProdutoSchema = new Schema({
         get: function(value) {
             return value/100;
         }
-
     }
 });
 

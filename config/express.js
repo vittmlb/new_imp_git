@@ -14,7 +14,6 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var handlebars = require('express-handlebars').create({layoutsDir: path.join(__dirname, '../app/views/layouts'), defaultLayout: 'main'});
 
-
 module.exports = function() {
     
     var app = express();
