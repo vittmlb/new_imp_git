@@ -28,6 +28,7 @@ module.exports = function() {
     });
 
     require('../app/models/produtos.server.model');
+    require('../app/models/estudos.server.model');
     
     return db;
 };

@@ -9,18 +9,27 @@
     <header>
         <nav class="navbar navbar-default">
             <div class="navbar-header">
-                <a href="#" class="navbar-brand">Branding</a>
+                <a href="#" class="navbar-brand">New Imp App</a>
             </div>
             <div class="container">
                 <ul class="nav navbar-nav">
-                    {{#if user}}
-                        <li class="active"><a href="/signout">Sign Out</a></li>
-                        <li><a href="/#!/articles">List Articles</a></li>
-                        <li><a href="/#!/articles/create">Create Article</a></li>
-                    {{else}}
-                        <li><a href="/signup">Sign Up</a></li>
-                        <li><a href="/signin">Sign In</a></li>
-                    {{/if}}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produtos <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/#!/produtos">Lista Produtos</a></li>
+                            <li><a href="/#!/produtos/create">Criar Produto</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Estudos <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/#!/estudos">Teste Estudos</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <form action="" class="navbar-form pull-right">
                     <div class="form-group">
@@ -46,13 +55,14 @@
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="./produtos/produtos.client.module.js"></script>
 <script src="./produtos/controllers/produtos.client.controller.js"></script>
 <script src="./produtos/services/produtos.client.service.js"></script>
 <script src="./produtos/config/produtos.client.routes.js"></script>
 <script src="./estudos/estudos.client.module.js"></script>
 <script src="./estudos/config/estudos.client.routes.js"></script>
-<script src="./estudos/controllers/estudos.client.controllers.js"></script>
+<script src="./estudos/controllers/estudos.client.controller.js"></script>
 <script src="./estudos/services/estudos.client.service.js"></script>
 <script src="./application.js"></script>
 </body>

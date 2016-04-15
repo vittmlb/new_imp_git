@@ -44,6 +44,7 @@ module.exports = function() {
     });
 
     require('../app/routes/produtos.server.routes')(app);
+    require('../app/routes/estudos.server.routes')(app);
 
     app.use(express.static('./public'));
     
