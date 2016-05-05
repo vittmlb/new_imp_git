@@ -2,7 +2,7 @@
     <h1>Produtos</h1>
     <ul class="list-group">
         <li class="list-group-item" data-ng-repeat="produto in produtos">
-            <a data-ng-href="#!/produtos/{{produtos._id}}" data-ng-bind="produto.nome"></a>
+            <a data-ng-href="#!/produtos/{{produto._id}}" data-ng-bind="produto.nome"></a>
             <br>
             <small data-ng-bind="produto.created | date:'medium'"></small>
             <small>/</small>

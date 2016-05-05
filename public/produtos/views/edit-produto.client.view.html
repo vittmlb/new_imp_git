@@ -1,0 +1,35 @@
+<section data-ng-controller="ProdutosController" data-ng-init="findOne()">
+    <h1>Edit Produto</h1>
+    <form data-ng-submit="update()" novalidate>
+        <div>
+            <label for="nome">Nome</label>
+            <div>
+                <input type="text" data-ng-model="produto.nome" id="nome" placeholder="Nome do Produto" required>
+            </div>
+        </div>
+        <div>
+            <label for="modelo">Modelo</label>
+            <div>
+                <input type="text" data-ng-model="produto.modelo" id="modelo" placeholder="Modelo do Produto">
+            </div>
+        </div>
+        <div>
+            <label for="descricao">Descrição</label>
+            <div>
+                <input type="text" data-ng-model="produto.descricao" id="descricao" placeholder="Descrição do Produto">
+            </div>
+        </div>
+        <div>
+            <label for="preco_usd">Preço USD</label>
+            <div>
+                <input type="text" data-ng-model="produto.preco_usd" id="preco_usd" placeholder="Preço em USD">
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Update">
+        </div>
+        <div data-ng-show="error">
+            <strong data-ng-bind="error"></strong>
+        </div>
+    </form>
+</section>

@@ -6,7 +6,13 @@ angular.module('produtos').factory('Produtos', ['$resource', function($resource)
         produtoId: '@_id'
     }, {
         update: {
-            method: 'PUT'
+            method: 'PUT',
+            isArray: true
+        }
+    }, {
+        query: {
+            method: 'GET',
+            isArray: false
         }
     });
 }]);
